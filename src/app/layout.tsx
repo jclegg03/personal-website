@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import NavBar from '@/components/NavBar';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Jay Clegg | Personal Website',
@@ -13,6 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-gray-100 text-gray-900">
         <NavBar/>
         <main className="min-h-screen max-w-7xl mx-auto p-6">{children}</main>
+        <Footer/>
       </body>
     </html>
   );
